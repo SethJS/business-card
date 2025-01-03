@@ -5,7 +5,17 @@ body {
     Find a web safe font you like, and add it 
     to your card.
     */
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: starjedi, serif;
+}
+
+@font-face {
+    font-family: starjhol;
+    src: url(Starjhol.ttf);
+}
+
+@font-face {
+    font-family: starjedi;
+    src: url(Starjedi.ttf);
 }
 
 .avatar {
@@ -14,16 +24,19 @@ body {
 }
 
 .card {
-    width: 400px;
+    width: 425px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 35px;
     display: flex;
     justify-content: space-around;
     text-align: center;
     background: #468faf;
-    color: #2b2839;
-    border-bottom: 6px solid #bbadff;
-    text-shadow: #bbadff 5px 0 10px;
+    background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnN2bjZldm91anN5d3E5a2g0Z2M2ZnB1ZzBvcXRkcWIwamRzZTZwYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l1Et7Qw1XjvunS0Io/giphy.gif);
+    background-size: cover;
+    color: black;
+    border-bottom: 6px solid #468faf;
+    
+    
         
     /*
     Challenge:
@@ -32,9 +45,21 @@ body {
      */
 }
 
+.onHover {
+    padding: 30px 3px 1px 3px;
+    border: solid 1px black;
+   background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa28xNTR5YnkzODBmcW4yMzJqMWExMWt6NDdjM2kxYXN3NDd1dGN4YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Sye75bfzPZrmo/giphy.gif);
+    text-shadow:  0px 0px 3px whitesmoke;
+}
+
 .onHover:hover {
-  background-color: yellow;
-  font-size: 18px;
+  background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmRmeDZteWRucTBidDB5cDd0NXczajF2bWswbTViYm12YjF3cnI2cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PApUlVfEFmZAQ/giphy.gif);
+  background-size:cover;
+  text-shadow:  0px 0px 5px black;
+  color: white;
+  padding: 30px 3px 0px 3px;
+  border: none;
+  font-family: starjhol, serif;
 }
 
 .border-blue {
